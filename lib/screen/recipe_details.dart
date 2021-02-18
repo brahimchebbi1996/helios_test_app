@@ -13,7 +13,6 @@ class RecipeDetails extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
       return _RecipeDetails(this._result);
   }
 
@@ -27,7 +26,6 @@ class _RecipeDetails extends State<RecipeDetails> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         appBar: PreferredSize(
             child: AppBar(

@@ -8,7 +8,7 @@ part 'recipe_event.dart';
 part 'recipe_state.dart';
 
 class RecipeBloc extends Bloc<RecipeEvent, RecipeState> {
-  // add dependency to perform your business logic (we need repository here)
+  // ajoutez une dépendance pour exécuter votre logique métier
   final RecipeRepository _repository;
   String query;
   int pageNumber = 1;
@@ -34,8 +34,8 @@ class RecipeBloc extends Bloc<RecipeEvent, RecipeState> {
   Stream<RecipeState> _mapToSearchEvent(SearchEvent event) async* {
     pageNumber = 1;
     query = event.query;
-    yield InitialState(); // clearing previous list
-    yield LoadingState(); // showing loading indicator
+    yield InitialState(); // effacer de la liste précédente
+    yield LoadingState(); // affichage de l'indicateur de chargement
     yield* _getRecipes(event.query); // get recipes
   }
 

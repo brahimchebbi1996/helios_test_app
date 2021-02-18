@@ -28,7 +28,7 @@ class RecipeListBuilder extends StatelessWidget {
           },
           itemCount: currentState.hasReachToEnd
               ? currentState.recipe.length
-              : currentState.recipe.length + 1, // for showing bottom progress bar
+              : currentState.recipe.length + 1, // afficher le progress bar
           controller: _scrollController,
         ),
       ),
