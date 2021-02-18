@@ -2,7 +2,7 @@ part of 'recipe_bloc.dart';
 
 @immutable
 abstract class RecipeEvent extends Equatable {
-  // Event is user interaction to your screen
+// L'événement est une interaction de l'utilisateur avec votre écran
   @override
   List<Object> get props => [];
 }
